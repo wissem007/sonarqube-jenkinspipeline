@@ -7,10 +7,10 @@ node {
     withSonarQubeEnv('sonarqube') {
       sh "${scannerHome}/bin/sonar-scanner \
       -D sonar.login=admin \
-      -D sonar.password=admin \
-      -D sonar.projectKey=sonarqubetest \
+      -D sonar.password=Admin123 \
+      -D sonar.projectKey=sonarqube \
       -D sonar.exclusions=vendor/**,resources/**,**/*.java \
-      -D sonar.host.url=http://192.168.1XX.XX:9000/"
+      -D sonar.host.url=http://141.95.254.226:7000/"
     }
   }
 }
